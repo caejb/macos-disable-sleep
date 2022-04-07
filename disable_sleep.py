@@ -3,19 +3,19 @@ from time import sleep
 
 def start():
     os.system('clear')
-    choise = input("Do you want to disable sleep? (y/n) ")
+    choise = input("Sleep Disabler? (enable/disable)")
     tool(choise)
 
 def repeat(choise):
     tool(choise)
 
 def tool(choise):
-    if choise == "y":
+    if choise == "disable":
         os.system("sudo pmset -a disablesleep 1")
         print("Sleep disabled")
         sleep(2)
         os.system('clear')
-    elif choise == "n":
+    elif choise == "enable":
        os.system("sudo pmset -a disablesleep 0")
        print("Sleep enabled")
        sleep(2)
