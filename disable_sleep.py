@@ -21,7 +21,7 @@ def tool(choise):
        sleep(2)
        os.system('clear')
     else:
-       print("Invalid choise, please write y or n")
+       print("Invalid choise, please write enable or disable")
        sleep(2)
        os.system('clear')
        start()
