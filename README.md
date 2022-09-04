@@ -2,9 +2,7 @@
 Disable MacOS Sleep when lid is closed.
 This script is running with python3.
 
-# Security Policy
-
-## Supported Versions
+# Supported Versions
 
 | Version | Supported          |
 | ------- | ------------------ |
