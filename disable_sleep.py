@@ -3,27 +3,26 @@ from time import sleep
 
 def start():
     os.system('clear')
-    choise = input("Sleep Disabler? (enable/disable)")
+    choise = input("""Sleep Management Tool 
+                        (enable/disable)""")
     tool(choise)
 
-def repeat(choise):
-    tool(choise)
+def x(choise):
+    sleep(2)
+    os.system('clear')
 
 def tool(choise):
     if choise == "disable":
         os.system("sudo pmset -a disablesleep 1")
         print("Sleep disabled")
-        sleep(2)
-        os.system('clear')
+        x()
     elif choise == "enable":
        os.system("sudo pmset -a disablesleep 0")
        print("Sleep enabled")
-       sleep(2)
-       os.system('clear')
+       x()
     else:
        print("Invalid choise, please write enable or disable")
-       sleep(2)
-       os.system('clear')
+       x()
        start()
 
 if __name__ == "__main__":
